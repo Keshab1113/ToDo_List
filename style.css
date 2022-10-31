@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(202, 233, 233);
+    background-image: url('https://source.unsplash.com/random/1600×900/?landscape');
 }
 .mb-4, .my-4 {
     margin-bottom: 6rem!important;
@@ -54,3 +54,7 @@ body{
     background: #ffffff;
     color: #6B728E;
 } 
+
+.main_table{
+    background-color:#000000d0;
+}

@@ -18,66 +18,68 @@
         </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">ToDo List</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">About</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">ToDo List</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container my-4">
+            <h2 class="text-center"><b>ToDo List</b></h2>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your personal details with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description">
+            </div>
+            <button type="submit" id="add" class="btn btn-primary">Add</button>
+            <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear All</button>
+            <div id="items" class="my-4">
+                <h2>The List</h2>
+                <table class="table table-dark main_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sl No</th>
+                            <th scope="col">Item</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>This is your item list</td>
+                            <td>This is your description list</td>
+                            <td><button class="btn btn-primary">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </nav>
-    <div class="container my-4">
-        <h2 class="text-center"><b>ToDo List</b></h2>
-        <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your personal details with anyone
-                else.</small>
-        </div>
-        <div class="form-group">
-            <label for="description">Description</label>
-            <input type="text" class="form-control" id="description">
-        </div>
-        <button type="submit" id="add" class="btn btn-primary">Add</button>
-        <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear All</button>
-        <div id="items" class="my-4">
-            <h2>The List</h2>
-            <table class="table table-dark">
-                <thead>
-                    <tr>
-                        <th scope="col">Sl No</th>
-                        <th scope="col">Item</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>This is your item list</td>
-                        <td>This is your description list</td>
-                        <td><button class="btn btn-primary">Delete</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    </main>
      <!-- footer section start -->
      <footer>
         <div class="card text-center">
